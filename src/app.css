@@ -23,7 +23,7 @@ body{
 .outer_frame{
     width:100%;
     height: 100%;
-    border:1px solid black;
+    border:1px dashed black;
     display: flex;
     flex-direction: column;
 }
@@ -38,7 +38,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    border:1px solid white;
+    border:1px dashed gainsboro;
     background-color: black;
     
 }
@@ -46,7 +46,7 @@ body{
     display: inline-block;
 }
 .clicked{
-    border:1px solid black;
+    border:1px dashed black;
     background-color: white;
 }
 .inner_row  span {
@@ -63,3 +63,24 @@ body{
     border-radius: 4px;
     z-index: 100;
 }
+.emoji{
+    z-index: -10;
+}
+.boom > .clicked{
+    background-color: black;
+    border: 1px dashed white;
+}
+.modal {
+    background-color: rgba(0,0,0,0.5);
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+  }
+  
